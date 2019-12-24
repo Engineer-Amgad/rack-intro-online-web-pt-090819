@@ -6,7 +6,7 @@ class Application
     resp.finish
   end
 
-  def pretty_response
+  def last_response
     (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
   end
 end
