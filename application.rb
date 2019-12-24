@@ -7,7 +7,7 @@ class Application
   end
 
   def last_response
-    (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
+    [200, { 'Content-Type' => 'text/html' }, ['<em>Hello, my name is Amgad</em>']]
   end
 end
 
